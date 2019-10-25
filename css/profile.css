@@ -1,0 +1,338 @@
+@import url('https://fonts.googleapis.com/css?family=Numans');
+html,
+body {
+    height: 100%;
+    font-family: 'Numans', sans-serif;
+}
+
+
+/* Extra small devices (phones, 600px and down) */
+
+header {
+    width: 100%;
+    overflow: visible;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    background-color: #0683c9;
+}
+
+header h1#logo {
+    font-size: 30px;
+    color: white;
+}
+
+header nav a {
+    margin-left: 20px;
+    color: #9fdbfc;
+    font-weight: 700;
+    font-size: 18px;
+}
+
+header nav a:hover {
+    color: white;
+    text-decoration: none;
+}
+
+header .container {
+    justify-content: space-between;
+}
+
+header a.dropdown-item {
+    margin: 0;
+}
+
+header a.dropdown-item:hover {
+    background-color: #eee;
+}
+
+#main {
+    padding-top: 100px;
+}
+
+#main .container {
+    width: 90%;
+}
+
+.card {
+    width: 100%;
+    margin: 0;
+}
+
+div.main-card {
+    text-align: center;
+}
+
+div.main-card div.basic-info-icon {
+    text-align: center;
+    vertical-align: middle;
+    display: none;
+}
+
+.avatar {
+    position: relative;
+    top: -70px;
+    margin-bottom: -70px;
+}
+
+.avatar:hover img {
+    background-color: rgba(100, 100, 100, 0.5);
+}
+
+div.main-card img.reduced-cover {
+    display: none;
+}
+
+div.main-card #user-photo {
+    width: 140px;
+    position: relative;
+    top: -20px;
+    margin: auto;
+    border-radius: 50%;
+    border: 3px solid white;
+    box-shadow: 2px 2px 5px black;
+}
+
+div.top-icon {
+    position: absolute;
+    color: #0683c9;
+    padding: 2px 5px;
+    top: 5px;
+    right: 5px;
+    border-radius: 5px;
+}
+
+div.top-icon a {
+    padding: 5px;
+    border-radius: 5px;
+}
+
+div.top-icon:hover a {
+    color: white;
+    background-color: #0683c9;
+    /*background-color: #b2daf3;*/
+    /*a5d8f8*/
+}
+
+div.skill-card {
+    width: 100%;
+    padding: 5px 10px;
+    border-radius: 10px;
+    margin: 10px 0;
+    text-align: left;
+    display: flex;
+    justify-content: space-between;
+}
+
+div.skill-card:hover {
+    background-color: #eee;
+}
+
+div.skill-card:hover div.icons i {
+    color: #0683c9;
+}
+
+div.skill-card div.icons {
+    min-width: 55px;
+    text-align: right;
+}
+
+div.skill-card div.icons i {
+    padding: 5px;
+    color: white;
+    border-radius: 5px;
+}
+
+div.skill-card div.icons i:hover {
+    color: white;
+    background-color: #0683c9;
+}
+
+div.project-card {
+    position: relative;
+    border-radius: 10px;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+div.project-card div[class$="icon"] a {
+    color: white
+}
+
+div.project-card:hover {
+    background-color: #eee;
+}
+
+div.project-card:hover div[class$="icon"] a {
+    color: #0683c9;
+}
+
+div.project-card:hover div[class$="icon"] a:hover {
+    color: white;
+    background-color: #0683c9;
+}
+
+div.project-card p {
+    margin: 0;
+}
+
+div.project-card div.delete-icon {
+    right: 40px;
+}
+
+div.project-card p.project-title {
+    color: #0683c9;
+}
+
+div.project-card p.project-dates {
+    font-size: 0.8em;
+    margin-bottom: 10px;
+}
+
+div.project-card p.project-description {
+    font-size: 0.9em;
+}
+
+div.randate {
+    width: 49%;
+    float: left;
+}
+
+div.randate:first-of-type {
+    margin-right: 1%;
+}
+
+div.randate:last-of-type {
+    margin-left: 1%;
+}
+
+.modal button[type="submit"]:not(.btn-danger) {
+    background-color: #0683c9;
+}
+
+div#basicInfoModal div.user-photo-content {
+    text-align: center;
+}
+
+div.modal img.user-photo {
+    width: 125px;
+    height: 125px;
+}
+
+div.modal div.user-photo {
+    z-index: 1000;
+    width: 125px;
+    height: 125px;
+    position: absolute;
+    left: 37.5%;
+}
+
+div.modal div.user-photo:hover {
+    background-color: rgba(100, 100, 100, 0.5);
+    cursor: pointer;
+    display: block;
+}
+
+div.modal div.user-photo img {
+    width: 30%;
+    position: absolute;
+    left: 0;
+}
+
+div#basicInfoModal input[type="file"] {
+    display: none;
+}
+
+footer {
+    margin-top: 20px;
+    background-color: #555;
+}
+
+footer * {
+    margin: 0;
+    text-align: center;
+    color: white;
+}
+
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+
+@media only screen and (min-width: 600px) {
+    /*body {
+        background-color: orange;
+    }*/
+    #main .container {
+        width: 80%;
+    }
+}
+
+
+/* Medium devices (landscape tablets, 768px and up) */
+
+@media only screen and (min-width: 768px) {
+    /*body {
+        background-color: blue;
+    }*/
+}
+
+
+/* Large devices (laptops/desktops, 992px and up) */
+
+@media only screen and (min-width: 992px) {
+    /*CHANGE IMAGE (REDUCED), FLOAT EDUCATION AND SKILLS, MOVE USER PHOTO*/
+    /*body {
+        background-color: green;
+    }*/
+    div.main-card div.basic-info {
+        width: 50%;
+        float: right;
+    }
+    div.main-card {
+        text-align: left;
+    }
+    div.main-card div.basic-info-icon {
+        display: block;
+    }
+    .avatar {
+        position: absolute;
+        left: 50px;
+        top: 50px;
+    }
+    div.main-card #user-photo {
+        width: 200px;
+        top: 40px;
+        left: 40px;
+    }
+    div.education-card {
+        width: 49%;
+        float: left;
+        margin-right: 2%;
+    }
+    div.skills-card {
+        width: 49%;
+    }
+    div.main-card img.cover {
+        display: none;
+    }
+    div.main-card img.reduced-cover {
+        display: block;
+    }
+}
+
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+
+@media only screen and (min-width: 1200px) {
+    /*body {
+        background-color: pink;
+    }*/
+    .avatar {
+        position: absolute;
+        left: 50px;
+        top: 50px;
+    }
+    div.main-card #user-photo {
+        width: 250px;
+    }
+}

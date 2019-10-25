@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css?family=Numans');
+html,
+body {
+    height: 100%;
+    font-family: 'Numans', sans-serif;
+}
+
+
+/* Extra small devices (phones, 600px and down) */
+
+header {
+    width: 100%;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    background-color: #0683c9;
+}
+
+header h1#logo {
+    font-size: 30px;
+    color: white;
+}
+
+header nav a {
+    margin-left: 20px;
+    color: #9fdbfc;
+    font-weight: 700;
+    font-size: 18px;
+}
+
+header nav a:hover {
+    color: white;
+    text-decoration: none;
+}
+
+header .container {
+    justify-content: space-between;
+}
+
+#main {
+    padding-top: 100px;
+}
+
+#main .container {
+    width: 90%;
+}
+
+.welcome {
+    text-align: justify;
+}
+
+footer {
+    margin-top: 20px;
+    background-color: #555;
+}
+
+footer * {
+    margin: 0;
+    text-align: center;
+    color: white;
+}
+
+.modal button[type="submit"] {
+    background-color: #0683c9;
+}
+
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+
+@media only screen and (min-width: 600px) {
+    /*body {
+        background-color: orange;
+    }*/
+    .main-image {
+        width: 80%;
+        margin: auto
+    }
+    #main .container {
+        width: 80%;
+    }
+}
+
+
+/* Medium devices (landscape tablets, 768px and up) */
+
+@media only screen and (min-width: 768px) {
+    /*body {
+        background-color: blue;
+    }*/
+    .main-image {
+        width: 60%;
+        float: left;
+        margin-right: 30px;
+    }
+}
+
+
+/* Large devices (laptops/desktops, 992px and up) */
+
+@media only screen and (min-width: 992px) {
+    /*body {
+        background-color: green;
+    }*/
+    .main-image {
+        width: 50%;
+    }
+}
+
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+
+@media only screen and (min-width: 1200px) {
+    /*body {
+        background-color: pink;
+    }*/
+    .main-image {
+        width: 45%;
+    }
+    .select-image {
+        width: 80%;
+        margin: auto;
+    }
+}

@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css?family=Numans');
+html,
+body {
+    height: 100%;
+    font-family: 'Numans', sans-serif;
+}
+
+
+/* Extra small devices (phones, 600px and down) */
+
+header {
+    width: 100%;
+    overflow: visible;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    background-color: #0683c9;
+}
+
+header h1#logo {
+    font-size: 30px;
+    color: white;
+}
+
+header nav a {
+    margin-left: 20px;
+    color: #9fdbfc;
+    font-weight: 700;
+    font-size: 18px;
+}
+
+header nav a:hover {
+    color: white;
+    text-decoration: none;
+}
+
+header .container {
+    justify-content: space-between;
+}
+
+header a.dropdown-item {
+    margin: 0;
+}
+
+header a.dropdown-item:hover {
+    background-color: #eee;
+}
+
+#main {
+    padding-top: 100px;
+}
+
+#main .container {
+    width: 90%;
+}
+
+div.card-cont {
+    /*margin: 20px 0;*/
+    margin: 0;
+}
+
+div.image-cont {
+    margin: auto;
+}
+
+footer {
+    margin-top: 20px;
+    background-color: #555;
+}
+
+footer * {
+    margin: 0;
+    text-align: center;
+    color: white;
+}
+
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+
+@media only screen and (min-width: 600px) {
+    /*body {
+        background-color: orange;
+    }*/
+}
+
+
+/* Medium devices (landscape tablets, 768px and up) */
+
+@media only screen and (min-width: 768px) {
+    /*body {
+        background-color: blue;
+    }*/
+}
+
+
+/* Large devices (laptops/desktops, 992px and up) */
+
+@media only screen and (min-width: 992px) {
+    /*CHANGE IMAGE (REDUCED), FLOAT EDUCATION AND SKILLS, MOVE USER PHOTO*/
+    /*body {
+        background-color: green;
+    }*/
+    div.card-cont {
+        width: 49%;
+        display: inline-block;
+    }
+}
+
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+
+@media only screen and (min-width: 1200px) {
+    /*body {
+        background-color: pink;
+    }*/
+}

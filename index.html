@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>LinkU</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="css/normalize.css">
+    <!--Fontawesome CDN-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="css/index.css">
+    <link href="https://fonts.googleapis.com/css?family=Comfortaa&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div class="container d-flex align-items-center">
+            <h1 id="logo">
+                Link U <i class="fas fa-link"></i>
+            </h1>
+            <nav>
+                <a href="#" data-toggle="modal" data-target="#loginModal">Log in</a>
+                <a href="#" data-toggle="modal" data-target="#registerModal">Register</a>
+            </nav>
+        </div>
+    </header>
+    <div id="main">
+        <div class="container">
+            <div>
+                <h3>Connect with your dream job</h3>
+            </div>
+            <div class="mt-5 main-image">
+                <img src="img/searching employee.png" width="100%" alt="">
+            </div>
+            <div class="mt-5 welcome">
+
+                <p>In today's global business environment, hiring (and keeping) the right employee is one of the most difficult jobs a manager has. Often leaders focus on the skill sets needed to get a job done right and overlook basic skills and personality
+                    traits critical to being a valued and productive team member. The consequences of a bad hire can be steep--personality clashes, project failures, and even firings. While every employee has a unique mix of skills and personality traits,
+                    there are common ones that every hiring manager should look for. Candidates who have these 5 qualities should definitely make your short list. </p>
+                <p>1. Agile. Employees should be flexible, nimble, and quick. They should be able to react and respond to changing needs and customer desires and to the moving parts in our global business world.</p>
+                <p>
+                    2. Friendly and open. Employees need to be approachable, kind, and compassionate. They should be able to speak in a way that makes others feel they are cared about. Stephen Covey writes that highly effective people are those who care about others before
+                    themselves.
+                </p>
+                <p>3. Internationally aware. An Ernst and Young report says that one of the most important qualities employers are looking for today is a global mindset. This means being aware of and sensitive to other cultures, customs, events, and perspectives.
+                </p>
+                <p>4. Energetic. Sometimes projects require an employee to work late or extra early--particularly when collaborating across time zones. Dream employees have the stamina to do this. They eat right, exercise, and take care of themselves so
+                    that they can conserve and protect their energy and have more of it.</p>
+                <p>5. Adaptable. Perfect employees are able to adjust to different cultures, personalities, and ways of doing things. For example, when collaborating with an introverted employee, they have the emotional intelligence to know that this person
+                    needs quiet time to think before speaking.</p>
+            </div>
+            <div class="select-image">
+                <img src="img/select-employee.jpg" width="100%" alt="">
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div>
+            <p>Link U &copy 2019</p>
+        </div>
+    </footer>
+
+
+    <!-- Log in Modal -->
+    <div class="row">
+        <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Log in</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                    </div>
+                    <div class="modal-body">
+                        <form action="home.html">
+                            <div class="form-group">
+                                <label for="inpEmail">Email</label>
+                                <input required type="email" name="inpEmail" id="inpEmail" class="form-control" placeholder="Your email" aria-describedby="helpId">
+                            </div>
+                            <div class="form-group">
+                                <label for="inpPassword">Password</label>
+                                <input required type="password" name="inpPassword" id="inpPassword" class="form-control" placeholder="Your password" aria-describedby="helpId">
+                            </div>
+                            <button type="submit" class="btn btn-primary">Log in</button>
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <p>You don't have an account <a href="#" data-toggle="modal" data-dismiss="modal" data-target="#registerModal">Register here!</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Register Modal -->
+    <div class="row">
+        <div class="modal fade" id="registerModal" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Register</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                    </div>
+                    <div class="modal-body">
+                        <form action="profile.html">
+                            <div class="form-group">
+                                <label for="inpFirstName">First name</label>
+                                <input required type="text" name="inpFirstName" id="inpFirstName" class="form-control" placeholder="Carlos" aria-describedby="helpId">
+                            </div>
+                            <div class="form-group">
+                                <label for="inpLastName">Last name</label>
+                                <input required type="text" name="inpLastName" id="inpLastName" class="form-control" placeholder="Robles" aria-describedby="helpId">
+                            </div>
+                            <div class="form-group">
+                                <label for="selectUserType">User type</label><br>
+                                <select name="selectUserType" id="selectUserType" class="form-control">
+                                    <option value="">Empleado</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="inpEmail">Email</label>
+                                <input required type="email" name="inpEmail" id="inpEmail" class="form-control" placeholder="Your email" aria-describedby="helpId">
+                            </div>
+                            <div class="form-group">
+                                <label for="inpPassword">Password</label>
+                                <input required type="password" name="inpPassword" id="inpPassword" class="form-control" placeholder="Your password" aria-describedby="helpId">
+                            </div>
+                            <button type="submit" class="btn btn-primary">Register</button>
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <p>Already on Link U? <a href="#" data-toggle="modal" data-dismiss="modal" data-target="#loginModal">Log in!</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+</body>
+
+</html>
