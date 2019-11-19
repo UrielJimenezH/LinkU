@@ -80,7 +80,7 @@
                                 </button>
                     </div>
                     <div class="modal-body">
-                        <form action="home.html">
+                        <form action="" id="loginForm">
                             <div class="form-group">
                                 <label for="inpEmail">Email</label>
                                 <input required type="email" name="inpEmail" id="inpEmail" class="form-control" placeholder="Your email" aria-describedby="helpId">
@@ -113,14 +113,14 @@
                                 </button>
                     </div>
                     <div class="modal-body">
-                        <form action="profile.html">
+                        <form action="" id="registerForm">
                             <div class="form-group">
                                 <label for="inpFirstName">First name</label>
                                 <input required type="text" name="inpFirstName" id="inpFirstName" class="form-control" placeholder="Carlos" aria-describedby="helpId">
                             </div>
                             <div class="form-group">
                                 <label for="inpLastName">Last name</label>
-                                <input required type="text" name="inpLastName" id="inpLastName" class="form-control" placeholder="Robles" aria-describedby="helpId">
+                                <input required type="text" name="inpLastName" id="inpLastname" class="form-control" placeholder="Robles" aria-describedby="helpId">
                             </div>
                             <div class="form-group">
                                 <label for="selectUserType">User type</label><br>
@@ -130,13 +130,13 @@
                             </div>
                             <div class="form-group">
                                 <label for="inpEmail">Email</label>
-                                <input required type="email" name="inpEmail" id="inpEmail" class="form-control" placeholder="Your email" aria-describedby="helpId">
+                                <input required type="email" name="inpEmail" id="inpEmailR" class="form-control" placeholder="Your email" aria-describedby="helpId">
                             </div>
                             <div class="form-group">
                                 <label for="inpPassword">Password</label>
-                                <input required type="password" name="inpPassword" id="inpPassword" class="form-control" placeholder="Your password" aria-describedby="helpId">
+                                <input required type="password" name="inpPassword" id="inpPasswordR" class="form-control" placeholder="Your password" aria-describedby="helpId">
                             </div>
-                            <button type="submit" class="btn btn-primary">Register</button>
+                            <button type="submit" class="btn btn-primary" id="btnRegister">Register</button>
                             <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
                         </form>
                     </div>
@@ -152,6 +152,9 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+
+    <script src="js/index.js"></script>
 </body>
 
 </html>

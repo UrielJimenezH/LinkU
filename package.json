@@ -1,0 +1,22 @@
+{
+  "name": "linku",
+  "version": "1.0.0",
+  "main": "prueba.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Leu8/LinkU.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Leu8/LinkU/issues"
+  },
+  "homepage": "https://github.com/Leu8/LinkU#readme",
+  "description": "",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
