@@ -5,7 +5,7 @@ const mongoose = require('mongoose');
 const bcrypt = require('bcryptjs');
 const jwt = require('jsonwebtoken');
 const app = express();
-const port = 3000;
+const port = process.env.PORT || 3000
 
 
 let MONGODB_URI = "mongodb+srv://uriel1:ejo6JmQLx224kBj3@cluster0-cdvck.mongodb.net/LinkU"
