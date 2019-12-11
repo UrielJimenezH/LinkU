@@ -10,7 +10,7 @@ const port = process.env.PORT || 3000
 
 let MONGODB_URI = "mongodb+srv://uriel1:ejo6JmQLx224kBj3@cluster0-cdvck.mongodb.net/LinkU"
 let mongoDB = 'mongodb://localhost:27017/LinkU';
-mongoose.connect(mongoDB, { useNewUrlParser: true });
+mongoose.connect(MONGODB_URI, { useNewUrlParser: true });
 let db = mongoose.connection;
 
 let projectSchema = mongoose.Schema({
