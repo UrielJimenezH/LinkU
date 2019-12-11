@@ -9,6 +9,8 @@ s.onclick = () => { infoToSave(4) }
 let p = document.getElementById("btnSaveProject")
 p.onclick = () => { infoToSave(5) }
 
+let usernameNav = document.getElementById("navbarDropdown");
+
 
 let infoType = 0
 
@@ -393,6 +395,7 @@ function fillData() {
                 .attr('src', 'img/user.jpg');
         }*/
 
+        usernameNav.innerHTML = userProfile.name;
         name.innerHTML = userProfile.name + " " + userProfile.lastname
         email.innerHTML = userProfile.email
         if (userProfile.birthday != undefined) {
@@ -578,7 +581,7 @@ function updateUser() {
 
 function saveSkillDB(skill) {
     let data = {
-        skill: skill
+        name: skill
     }
     let url = `/api/skills`
     let xhr = new XMLHttpRequest();

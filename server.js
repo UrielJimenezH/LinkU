@@ -1,6 +1,5 @@
 "use strict"
 const express = require("express");
-const randomize = require('randomatic');
 const mongoose = require('mongoose');
 const bcrypt = require('bcryptjs');
 const jwt = require('jsonwebtoken');
@@ -77,11 +76,6 @@ app.get('/', (req, res) => {
 });
 
 app.listen(port);
-
-app.route('/api/users')
-    .get(authenticate, (req, res) => {
-
-    });
 
 app.route('/api/login')
     .post((req, resp) => {

@@ -1,10 +1,15 @@
 let users = [];
 let container = document.getElementById("usersContainer");
+let usernameNav = document.getElementById("navbarDropdown");
 
 function showUsers() {
     let usersCont = "";
     for (let i = 0; i < users.length; i++) {
         let user = users[i];
+
+        if (localStorage.currentUserId == user._id) {
+            usernameNav.innerHTML = user.name
+        }
         let numProjects = 0;
         if (user.projects != undefined) {
             numProjects = user.projects.length;
